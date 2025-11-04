@@ -1,10 +1,9 @@
-# ---- FINAL FIXED REQUIREMENTS ----
-# ✅ Fully compatible with Python 3.13
+# --- FINAL STREAMLIT FIX FOR PYTHON 3.13 ---
 
-# Streamlit (newer version removes strict pyarrow requirement)
+# Streamlit (latest version that no longer needs pyarrow)
 streamlit==1.38.0
 
-# Core ML & data libraries
+# Data & ML
 pandas==2.2.3
 numpy==1.26.4
 scikit-learn==1.5.2
@@ -18,14 +17,11 @@ plotly==5.24.1
 matplotlib==3.9.2
 seaborn==0.13.2
 
-# Parquet engine (replacement for pyarrow)
+# Parquet backend (replacement for pyarrow)
 fastparquet==2024.5.0
 fsspec==2024.10.0
 
-# Utilities
+# Utils
 requests==2.32.3
 tqdm==4.66.4
 python-dateutil==2.9.0.post0
-
-# Disable pyarrow but keep compatibility flag
-pyarrow-stubs==10.0.1.7
