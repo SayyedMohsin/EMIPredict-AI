@@ -1,11 +1,10 @@
 # --------------------------
-# ✅ FINAL WORKING REQUIREMENTS (Python 3.13 Safe)
+# ✅ FINAL FIXED REQUIREMENTS (Python 3.13 compatible)
 # --------------------------
 
-# Core framework
 streamlit==1.31.1
 
-# Data processing
+# ML & Data
 pandas==2.2.2
 numpy==1.26.4
 scikit-learn==1.5.0
@@ -19,13 +18,15 @@ plotly==5.22.0
 matplotlib==3.9.0
 seaborn==0.13.2
 
-# Utility
+# Utilities
 requests==2.32.3
 tqdm==4.66.4
 python-dateutil==2.9.0.post0
 
-# --- Critical Fixes ---
-# Streamlit auto-installs pyarrow, which breaks in Python 3.13
-# So, we fake it using an empty placeholder package
+# --- Key Fix: Replace pyarrow with fastparquet ---
+# (pyarrow not supported in Python 3.13)
 fsspec==2024.6.0
 fastparquet==2024.5.0
+
+# Avoid pyarrow stub installation
+pyarrow==0.0.0
