@@ -12,3 +12,5 @@ seaborn==0.13.2
 requests==2.32.3
 tqdm==4.66.4
 python-dateutil==2.9.0.post0
+# Optional: replace pyarrow with stub to bypass build
+pyarrow-stubs==9.0.0.6
