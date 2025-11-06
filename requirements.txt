@@ -74,6 +74,7 @@ PyJWT==2.10.1
 pyparsing==3.0.9
 python-dateutil==2.9.0.post0
 pytz==2023.4
+pywin32==311; platform_system == "Windows"
 PyYAML==6.0.3
 querystring-parser==1.2.4
 referencing==0.36.2
